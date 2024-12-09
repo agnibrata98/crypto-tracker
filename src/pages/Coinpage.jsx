@@ -1,12 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import axiosInstance from '../config/axios';
 import { useQuery } from '@tanstack/react-query';
 import CoinInfo from '../components/CoinInfo';
 import { CryptoState } from '../CryptoContext';
 import { Typography, CircularProgress, Grid } from '@mui/material';
 import { numberWithCommas } from '../components/CoinsTable';
 import parse from 'html-react-parser';
+import axiosInstance from '../config/axios';
 
 const Coinpage = () => {
   const { id } = useParams();
